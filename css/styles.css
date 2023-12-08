@@ -17,8 +17,14 @@ footer {
     position: absolute;
 }
 
+main {
+    padding-top: 50px;
+}
+
 .navbar {
     display: flex;
+    position: fixed;
+    z-index: 1;
     justify-content: space-around;
     width: 100%;
     height: 50px;
@@ -36,6 +42,33 @@ footer {
 
 .navbar div a:hover {
     color: #43436e;
+}
+
+.menu-dropdown {
+    display: none;
+    position: relative;
+    margin-left: auto;
+    padding-right: 40px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -50px;
+    z-index: 1;
+    background-color: #b2b2d0;
+    opacity: 80%;
+    padding: 0 20px;
+}
+
+.dropdown-button {
+    background-color: #cacfee;
+    margin-top: 0;
+    width: 40px;
+}
+
+.dropdown-button:hover {
+    background-color: #cacfee;
 }
 
 .catalog {
@@ -96,7 +129,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*margin: 20px;*/
 }
 
 .price {
@@ -118,4 +150,54 @@ button {
 
 button:hover {
     background-color: #bcbed0;
+}
+
+.menu-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    color: #3b3b57;
+}
+
+table td {
+    width: 10vw;
+    padding: 10px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #a3a3c7;
+}
+
+table tr:first-child {
+    background-color: #484867;
+    color: #1a1a4b;
+}
+
+.info {
+    width: 70%;
+    height: 100%;
+    background-color: #cacfee;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #43436e;
+}
+
+.info h1 {
+    color: #43436e;
+}
+
+@media (orientation: portrait) {
+    .menu-dropdown {
+        display: inline-block;
+    }
+
+    .navbar div:not(.menu-dropdown) {
+        display: none;
+    }
 }
