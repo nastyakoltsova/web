@@ -6,6 +6,8 @@
     <meta name="keywords" content="магазин">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="js/loadTime.js"></script>
+    <script src="js/menuActive.js"></script>
 </head>
 <body>
     <header>
@@ -17,12 +19,14 @@
                 <div class="dropdown-content">
                     <a href="info.html">О нас</a>
                     <a href="index.html">Главная</a>
-                    <a href="#">Корзина</a>
+                    <a href="cart.html">Корзина</a>
+                    <a href="wishList.html">Список покупок</a>
                 </div>
             </div>
             <div><a href="info.html">О нас</a></div>
             <div><a href="index.html">Главная</a></div>
-            <div><a href="#">Корзина</a></div>
+            <div><a href="cart.html">Корзина</a></div>
+            <div><a href="wishList.html">Список покупок</a></div>
         </nav>
     </header>
     <main>
@@ -96,7 +100,11 @@
         </div>
     </main>
     <footer>
-        <p></p>
+        <div class="contacts">
+            <a href="https://github.com/nastyakoltsova">Мой гитхаб</a>
+            <a href="https://t.me/golrs">Мой канал</a>
+        </div>
+        <div id="load-time"></div>
     </footer>
 </body>
 </html>
