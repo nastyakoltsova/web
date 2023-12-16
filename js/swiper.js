@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
      new Swiper('.swiper', {
-        // Параметры Swiper
         loop: true,
         pagination: {
             el: '.swiper-pagination',
@@ -10,6 +9,5 @@ document.addEventListener('DOMContentLoaded', function() {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        // Другие настройки по желанию...
     });
 });
