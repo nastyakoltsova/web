@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="js/loadTime.js"></script>
     <script src="js/menuActive.js"></script>
+    <script src="js/modal.js"></script>
 </head>
 <body>
     <header>
@@ -106,5 +107,17 @@
         </div>
         <div id="load-time"></div>
     </footer>
+    <div id="myModal" class="modal">
+        <div class="modalContent">
+            <span class="close">&times;</span>
+            <img id="modalImage" src=""/>
+            <div id="modalText"></div>
+            <h1>Отзывы:</h1>
+            <div id="preloader" class="loader"></div>
+            <div id="content">
+                <div id="reviews"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
