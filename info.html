@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="js/loadTime.js"></script>
     <script src="js/menuActive.js"></script>
+    <script src="js/swiper.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        :root {
+            --swiper-theme-color: #50546c
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -67,7 +75,22 @@
                     <td>250$</td>
                 </tr>
             </table>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <img src="img/1.jpeg"/></div>
+                    <div class="swiper-slide"> <img src="img/2.png"/></div>
+                    <div class="swiper-slide"> <img src="img/3.jpeg"/></div>
+                    <div class="swiper-slide"> <img src="img/4.jpg"/></div>
+                    <div class="swiper-slide"> <img src="img/5.jpg"/></div>
+                    ...
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
+
     </main>
     <footer>
         <div class="contacts">
