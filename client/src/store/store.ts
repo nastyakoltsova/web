@@ -32,7 +32,7 @@ const cartSlice = createSlice({
 
 export const { addToCart } = cartSlice.actions;
 
-export const selectCartItems = state => state.cart.items;
+export const selectCartItems = (state: { cart: { items: any; }; }) => state.cart.items;
 
 export const store = configureStore({
     reducer: {
