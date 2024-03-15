@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Ароматическая свеча",
+    "image": "./img/1.jpeg",
+    "description": "С запахом буддизма",
+    "price": 125
+  },
+  {
+    "id": 2,
+    "name": "Свеча",
+    "image": "./img/2.png",
+    "description": "Свеча с вайбом",
+    "price": 50
+  },
+  {
+    "id": 3,
+    "name": "Свеча",
+    "image": "./img/3.jpeg",
+    "description": "Свеча без вайба",
+    "price": 1
+  },
+  {
+    "id": 4,
+    "name": "Плед",
+    "image": "./img/4.jpg",
+    "description": "Белый поэтому быстро испачкается",
+    "price": 8
+  },
+  {
+    "id": 5,
+    "name": "Прикольный плед",
+    "image": "./img/5.jpg",
+    "description": "Типа вы шаурма",
+    "price": 250
+  }
+]
