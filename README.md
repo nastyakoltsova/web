@@ -1,3 +1,3 @@
 # web
 
-https://nastyakoltsova.github.io/web/
+https://web-2-7y0v.onrender.com
