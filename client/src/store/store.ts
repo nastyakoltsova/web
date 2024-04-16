@@ -26,7 +26,6 @@ const cartSlice = createSlice({
                 state.items.push({ product: action.payload, quantity: 1 });
             }
         },
-        // Другие действия, например, удаление из корзины и т.д.
     },
 });
 

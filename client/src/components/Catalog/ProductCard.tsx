@@ -1,11 +1,19 @@
 import React, {FormEvent, JSX, useState} from "react";
 import {Products} from "./Catalog.tsx";
-import {addToCart} from "../../store/store.ts";
-import {useDispatch} from "react-redux";
+import {addToCart, selectCartItems} from "../../store/store.ts";
+import {useDispatch, useSelector} from "react-redux";
 
 export function ProductCard({product}: { product: Products }): JSX.Element {
     const [count, setCount] = useState<number>(0)
     const dispatch = useDispatch();
+    const cartItems = useSelector(selectCartItems);
+
+    const cartItemCount = cartItems.reduce((total, item) => {
+        if (item.product.id === product.id) {
+            return total + item.quantity;
+        }
+        return total;
+    }, 0);
 
     const handleAddToCart = (event : FormEvent, product: Products) => {
         event.stopPropagation()
@@ -32,10 +40,10 @@ export function ProductCard({product}: { product: Products }): JSX.Element {
                     <p>{product.description}</p>
                     <div className="buy">
                         <strong className="price">{product.price}$</strong>
-                        {count === 0 ? <button onClick={(event) => handleAddToCart(event, product)}>В корзину</button> :
+                        {cartItemCount === 0 ? <button onClick={(event) => handleAddToCart(event, product)}>В корзину</button> :
                             <div className="button-wrapper">
                                 <button className="minus-button" onClick={(e) => handleDecrement(e)}>-</button>
-                                <span className="button-value">{count}</span>
+                                <span className="button-value">{cartItemCount}</span>
                                 <button className="plus-button" onClick={(event) => handleAddToCart(event, product)}>+</button>
                             </div>
                         }
