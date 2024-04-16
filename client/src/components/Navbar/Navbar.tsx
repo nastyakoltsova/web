@@ -6,7 +6,6 @@ export function Navbar(): JSX.Element {
         <nav className="navbar">
             <Link to={'/info'}>О нас</Link>
             <Link to={'/catalog'}>Каталог</Link>
-            <Link to={'/wishlist'}>Список желаний</Link>
             <Link to={'/cart'}>Корзина</Link>
         </nav>
     )

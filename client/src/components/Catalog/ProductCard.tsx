@@ -8,7 +8,7 @@ export function ProductCard({product}: { product: Products }): JSX.Element {
     const dispatch = useDispatch();
     const cartItems = useSelector(selectCartItems);
 
-    const cartItemCount = cartItems.reduce((total, item) => {
+    const cartItemCount = cartItems.reduce((total: number, item: { product: { id: number; }; quantity: number; }) => {
         if (item.product.id === product.id) {
             return total + item.quantity;
         }
